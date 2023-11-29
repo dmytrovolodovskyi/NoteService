@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Notes list</title>
+</head>
+<body>
+<h1>Note list: <span th:text="${noteList}"></span></h1>
+<form >
+    <button formaction="/note/delete" formmethod="GET">Delete</button>
+    <button formaction="/note/edit" formmethod="GET">Edit</button>
+    <button formaction="/note/add" formmethod="GET">Add note</button>
+</form>
+</body>
+</html>
